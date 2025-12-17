@@ -16,9 +16,11 @@ L’application est construite avec **Node.js**, **Express.js**, **Handlebars (h
 - [Licence](#licence)
 
 ---
-Installation
+## Installation
 
-Cloner le dépôt
+1. **Cloner le dépôt**  
+
+```bash
 git clone https://github.com/votre-utilisateur/vapeur.git
 cd vapeur
 
@@ -31,54 +33,44 @@ npx prisma migrate deploy
 
 
 ⚠️ La base de données SQLite n’est pas commitée et sera générée lors de l’exécution des migrations.
-Lancement
+
+---
+
+### 2. **Lancement** (`#lancement`)  
+Indique comment lancer l’app localement :  
+
+```markdown
+## Lancement
 
 Pour lancer l’application en mode développement :
-npm run start
+
+```bash
+npm start
 
 Ensuite, rendez-vous sur http://localhost:3000 pour accéder à l’application.
 
-Fonctionnalités
+---
 
-Vapeur permet de gérer :
-  Jeux
-  Titre
-  Description
-  Date de sortie
-  Genre
-  Éditeur
+### 3. **Fonctionnalités** (`#fonctionnalités`)  
+Liste ce que l’utilisateur peut faire :  
 
+```markdown
+## Fonctionnalités
 
-Mise en avant
+### Jeux
+- Titre, description, date de sortie, genre, éditeur, mise en avant
+- Créer, modifier, supprimer un jeu
+- Voir le détail d’un jeu
+- Mettre un jeu en avant
 
-Actions disponibles :
-  Afficher la liste des jeux mis en avant sur la page d'accueil
-  Afficher la liste de tous les jeux
-  Créer un jeu
-  Voir le détail d’un jeu (avec genre et éditeur)
-  Modifier un jeu
-  Supprimer un jeu
-  Mettre un jeu en avant
+### Genres
+- Nom, liste des jeux associés
+- Afficher tous les genres
+- Afficher les jeux par genre
 
+### Éditeurs
+- Nom, liste des jeux associés
+- Créer, modifier, supprimer un éditeur
+- Afficher tous les éditeurs
+- Afficher les jeux par éditeur
 
-Genres
-  Nom
-  Liste des jeux associés
-
-Actions disponibles :
-  Afficher la liste des genres
-  Afficher la liste des jeux par genre
-  
-Les genres sont prédéfinis dans la base de données : Action, Aventure, RPG, Simulation, Sport, MMORPG. Ils sont automatiquement générés si absents.
-Éditeurs
-Nom
-
-
-Liste des jeux associés
-
-Actions disponibles :
-  Créer un éditeur
-  Afficher la liste des éditeurs
-  Afficher la liste des jeux par éditeur
-  Modifier un éditeur
-  Supprimer un éditeur
