@@ -11,9 +11,6 @@ L’application est construite avec **Node.js**, **Express.js**, **Handlebars (h
 - [Installation](#installation)
 - [Lancement](#lancement)
 - [Fonctionnalités](#fonctionnalités)
-- [Structure du projet](#structure-du-projet)
-- [Contribuer](#contribuer)
-- [Licence](#licence)
 
 ---
 ## Installation
@@ -36,7 +33,8 @@ npx prisma migrate deploy
 
 ---
 
-### 2. **Lancement** (`#lancement`)  
+
+## 2. **Lancement** (`#lancement`)  
 Indique comment lancer l’app localement :  
 
 ```markdown
@@ -51,7 +49,8 @@ Ensuite, rendez-vous sur http://localhost:3000 pour accéder à l’application.
 
 ---
 
-### 3. **Fonctionnalités** (`#fonctionnalités`)  
+
+## 3. **Fonctionnalités** (`#fonctionnalités`)  
 Liste ce que l’utilisateur peut faire :  
 
 ```markdown
