@@ -29,7 +29,6 @@ npx prisma migrate deploy
 
 ## Lancement
 
-2. **Lancement** (`#lancement`)  
 Indique comment lancer l’app localement :  
 
 ```markdown
@@ -46,7 +45,7 @@ Ensuite, rendez-vous sur http://localhost:3000 pour accéder à l’application.
 
 
 ## Fonctionnalités
-3. **Fonctionnalités** (`#fonctionnalités`)  
+
 Liste ce que l’utilisateur peut faire :  
 
 ```markdown
