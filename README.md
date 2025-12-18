@@ -15,13 +15,6 @@ L’application est construite avec **Node.js**, **Express.js**, **Handlebars (h
 ---
 ## Installation
 
-1. **Cloner le dépôt**  
-
-```bash
-git clone https://github.com/votre-utilisateur/vapeur.git
-cd vapeur
-
-
 Installer les dépendances
 npm install
 
