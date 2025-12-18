@@ -1,0 +1,12 @@
+<h1>Jeux</h1>
+
+<a href="/games/new">➕ Ajouter un jeu</a>
+
+<ul>
+  {{#each games}}
+    <li>
+      <a href="/games/{{this.id}}">{{this.title}}</a>
+      {{#if this.featured}} ⭐ {{/if}}
+    </li>
+  {{/each}}
+</ul>

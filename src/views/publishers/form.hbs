@@ -1,0 +1,7 @@
+<h1>{{#if publisher}}Modifier{{else}}Créer{{/if}} un éditeur</h1>
+
+<form method="POST">
+  <label>Nom de l'éditeur</label>
+  <input name="name" value="{{publisher.name}}" required>
+  <button type="submit">💾 Enregistrer</button>
+</form>

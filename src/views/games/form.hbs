@@ -1,0 +1,33 @@
+<h1>{{#if game}}Modifier{{else}}Créer{{/if}} un jeu</h1>
+
+<form method="POST">
+  <label>Titre</label>
+  <input name="title" value="{{game.title}}" required>
+
+  <label>Description</label>
+  <textarea name="description">{{game.description}}</textarea>
+
+  <label>Date de sortie</label>
+  <input type="date" name="releaseDate">
+
+  <label>Genre</label>
+  <select name="genreId" required>
+    {{#each genres}}
+      <option value="{{this.id}}">{{this.name}}</option>
+    {{/each}}
+  </select>
+
+  <label>Éditeur</label>
+  <select name="publisherId" required>
+    {{#each publishers}}
+      <option value="{{this.id}}">{{this.name}}</option>
+    {{/each}}
+  </select>
+
+  <label>
+    <input type="checkbox" name="featured">
+    Mise en avant
+  </label>
+
+  <button type="submit">💾 Enregistrer</button>
+</form>

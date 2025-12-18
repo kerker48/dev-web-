@@ -1,0 +1,19 @@
+<h1>{{game.title}}</h1>
+
+<p>{{game.description}}</p>
+
+<p><strong>Genre :</strong>
+  <a href="/genres/{{game.genre.id}}">{{game.genre.name}}</a>
+</p>
+
+<p><strong>Éditeur :</strong>
+  <a href="/publishers/{{game.publisher.id}}">{{game.publisher.name}}</a>
+</p>
+
+<p><strong>Mise en avant :</strong> {{#if game.featured}}Oui{{else}}Non{{/if}}</p>
+
+<a href="/games/{{game.id}}/edit" class="btn">✏️ Modifier</a>
+
+<form method="POST" action="/games/{{game.id}}/delete" style="display:inline;">
+  <button type="submit">🗑 Supprimer</button>
+</form>

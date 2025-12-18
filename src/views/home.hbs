@@ -1,0 +1,12 @@
+<h1>Accueil</h1>
+
+<p>Jeux mis en avant :</p>
+
+<ul>
+  {{#each featured}}
+    <li>
+      <a href="/games/{{this.id}}">{{this.title}}</a>
+      {{#if this.featured}} ⭐ {{/if}}
+    </li>
+  {{/each}}
+</ul>

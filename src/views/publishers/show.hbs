@@ -1,0 +1,17 @@
+<h1>{{publisher.name}}</h1>
+
+<h2>Jeux associés</h2>
+<ul>
+  {{#each publisher.games}}
+    <li>
+      <a href="/games/{{this.id}}">{{this.title}}</a>
+      {{#if this.featured}} ⭐ {{/if}}
+    </li>
+  {{/each}}
+</ul>
+
+<a href="/publishers/{{publisher.id}}/edit">✏️ Modifier</a>
+
+<form method="POST" action="/publishers/{{publisher.id}}/delete" style="display:inline;">
+  <button type="submit">🗑 Supprimer</button>
+</form>

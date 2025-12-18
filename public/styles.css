@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  color: #1c1e21;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #1b2838;
+  color: white;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+header nav {
+  display: flex;
+  gap: 20px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+header nav a:hover {
+  color: #66c0f4;
+}
+
+main {
+  flex: 1;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #1b2838;
+  font-size: 2rem;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  color: #2a475e;
+  font-size: 1.5rem;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul li a {
+  color: #1b2838;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+ul li a:hover {
+  color: #66c0f4;
+}
+
+button, .btn {
+  padding: 10px 15px;
+  background-color: #66c0f4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+button:hover, .btn:hover {
+  background-color: #4a90c8;
+  transform: translateY(-1px);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+form label {
+  font-weight: 600;
+  color: #2a475e;
+}
+
+form input, form textarea, form select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+footer {
+  background-color: #1b2838;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+ul li .star {
+  color: gold;
+  margin-left: 5px;
+}
+
+a, button, input, select, textarea {
+  transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  main {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  header nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

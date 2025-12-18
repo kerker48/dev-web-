@@ -1,0 +1,11 @@
+<h1>Éditeurs</h1>
+
+<a href="/publishers/new">➕ Ajouter un éditeur</a>
+
+<ul>
+  {{#each publishers}}
+    <li>
+      <a href="/publishers/{{this.id}}">{{this.name}}</a>
+    </li>
+  {{/each}}
+</ul>

@@ -1,0 +1,10 @@
+<h1>{{genre.name}}</h1>
+
+<h2>Jeux :</h2>
+<ul>
+  {{#each genre.games}}
+    <li>{{title}} - {{publisher.name}}</li>
+  {{/each}}
+</ul>
+
+<a href="/genres">Retour aux genres</a>
